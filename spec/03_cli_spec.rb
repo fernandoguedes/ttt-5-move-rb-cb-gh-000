@@ -7,8 +7,7 @@ describe './bin/move executing a CLI Application' do
     allow(self).to receive(:move)
 
     board = get_variable_from_file("./bin/move", "board")
-    puts board
-    expect(board).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " "])
+    expect(board).to eq(1)
   end
 
   it 'prints "Welcome to Tic Tac Toe!"' do
